@@ -60,6 +60,16 @@
       "category": "Image Generation Models",
       "sub_category": "Qwen Image Models"
     },
+    "Image Generation Models::Qwen Image Models::Qwen Image Lightning 8steps V1.1 LoRA": {
+      "name": "Qwen Image Lightning 8steps V1.1 LoRA",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Qwen-Image-Lightning-8steps-V1.1.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 1698951104,
+      "size_gb": 1.58,
+      "category": "Image Generation Models",
+      "sub_category": "Qwen Image Models"
+    },
     "Image Generation Models::FLUX Models::FLUX Krea DEV": {
       "name": "FLUX Krea DEV",
       "repo_id": "MonsterMMORPG/Wan_GGUF",
@@ -1750,6 +1760,46 @@
       "category": "Video Generation Models",
       "sub_category": "Wan 2.2 Official Models"
     },
+    "Video Generation Models::Wan 2.2 LoRAs::Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low": {
+      "name": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 1226977424,
+      "size_gb": 1.14,
+      "category": "Video Generation Models",
+      "sub_category": "Wan 2.2 LoRAs"
+    },
+    "Video Generation Models::Wan 2.2 LoRAs::Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High": {
+      "name": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 1226977424,
+      "size_gb": 1.14,
+      "category": "Video Generation Models",
+      "sub_category": "Wan 2.2 LoRAs"
+    },
+    "Video Generation Models::Wan 2.2 LoRAs::Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low": {
+      "name": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 1226977424,
+      "size_gb": 1.14,
+      "category": "Video Generation Models",
+      "sub_category": "Wan 2.2 LoRAs"
+    },
+    "Video Generation Models::Wan 2.2 LoRAs::Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High": {
+      "name": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 1226977424,
+      "size_gb": 1.14,
+      "category": "Video Generation Models",
+      "sub_category": "Wan 2.2 LoRAs"
+    },
     "Video Generation Models::Hunyuan Models::HunYuan T2V 720p BF16": {
       "name": "HunYuan T2V 720p BF16",
       "repo_id": "Comfy-Org/HunyuanVideo_repackaged",
@@ -2070,6 +2120,86 @@
       "category": "Video Generation Models",
       "sub_category": "Lightricks LTX Video Models - Ultra Fast"
     },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 CausVid T2V/I2V LoRA v2 14B (Rank 32) - Companion": {
+      "name": "Wan 2.1 CausVid T2V/I2V LoRA v2 14B (Rank 32) - Companion",
+      "repo_id": "Kijai/WanVideo_comfy",
+      "filename": "Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 204551064,
+      "size_gb": 0.19,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 CausVid T2V/I2V LoRA 14B (Rank 32) - Companion": {
+      "name": "Wan 2.1 CausVid T2V/I2V LoRA 14B (Rank 32) - Companion",
+      "repo_id": "Kijai/WanVideo_comfy",
+      "filename": "Wan21_CausVid_14B_T2V_lora_rank32.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 319116504,
+      "size_gb": 0.3,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 CausVid T2V LoRA 1.3B (Rank 32) - Companion": {
+      "name": "Wan 2.1 CausVid T2V LoRA 1.3B (Rank 32) - Companion",
+      "repo_id": "Kijai/WanVideo_comfy",
+      "filename": "Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 91233416,
+      "size_gb": 0.08,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Phantom Wan 14B FusionX LoRA": {
+      "name": "Phantom Wan 14B FusionX LoRA",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Phantom_Wan_14B_FusionX_LoRA.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 316822496,
+      "size_gb": 0.3,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 I2V 14B FusionX LoRA": {
+      "name": "Wan 2.1 I2V 14B FusionX LoRA",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan2.1_Image_to_Video_14B_FusionX_LoRA.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 371128616,
+      "size_gb": 0.35,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 T2V 14B FusionX LoRA": {
+      "name": "Wan 2.1 T2V 14B FusionX LoRA",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan2.1_Text_to_Video_14B_FusionX_LoRA.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 316822496,
+      "size_gb": 0.3,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 14B Self Forcing LoRA T2V/I2V": {
+      "name": "Wan 2.1 14B Self Forcing LoRA T2V/I2V",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan21_14B_Self_Forcing_LoRA_T2V_I2V.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 316822831,
+      "size_gb": 0.3,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
+    "LoRA Models::Wan 2.1 LoRAs::Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)": {
+      "name": "Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)",
+      "repo_id": "MonsterMMORPG/Wan_GGUF",
+      "filename": "Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
+      "is_snapshot": false,
+      "size_bytes": 739472104,
+      "size_gb": 0.69,
+      "category": "LoRA Models",
+      "sub_category": "Wan 2.1 LoRAs"
+    },
     "LoRA Models::Various LoRAs::Migration LoRA Cloth (TTPlanet)": {
       "name": "Migration LoRA Cloth (TTPlanet)",
       "repo_id": "TTPlanet/Migration_Lora_flux",
@@ -2087,86 +2217,6 @@
       "is_snapshot": false,
       "size_bytes": 343805384,
       "size_gb": 0.32,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 CausVid T2V/I2V LoRA v2 14B (Rank 32) - Companion": {
-      "name": "Wan 2.1 CausVid T2V/I2V LoRA v2 14B (Rank 32) - Companion",
-      "repo_id": "Kijai/WanVideo_comfy",
-      "filename": "Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 204551064,
-      "size_gb": 0.19,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 CausVid T2V/I2V LoRA 14B (Rank 32) - Companion": {
-      "name": "Wan 2.1 CausVid T2V/I2V LoRA 14B (Rank 32) - Companion",
-      "repo_id": "Kijai/WanVideo_comfy",
-      "filename": "Wan21_CausVid_14B_T2V_lora_rank32.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 319116504,
-      "size_gb": 0.3,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 CausVid T2V LoRA 1.3B (Rank 32) - Companion": {
-      "name": "Wan 2.1 CausVid T2V LoRA 1.3B (Rank 32) - Companion",
-      "repo_id": "Kijai/WanVideo_comfy",
-      "filename": "Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 91233416,
-      "size_gb": 0.08,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Phantom Wan 14B FusionX LoRA": {
-      "name": "Phantom Wan 14B FusionX LoRA",
-      "repo_id": "MonsterMMORPG/Wan_GGUF",
-      "filename": "Phantom_Wan_14B_FusionX_LoRA.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 316822496,
-      "size_gb": 0.3,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 I2V 14B FusionX LoRA": {
-      "name": "Wan 2.1 I2V 14B FusionX LoRA",
-      "repo_id": "MonsterMMORPG/Wan_GGUF",
-      "filename": "Wan2.1_Image_to_Video_14B_FusionX_LoRA.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 371128616,
-      "size_gb": 0.35,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 T2V 14B FusionX LoRA": {
-      "name": "Wan 2.1 T2V 14B FusionX LoRA",
-      "repo_id": "MonsterMMORPG/Wan_GGUF",
-      "filename": "Wan2.1_Text_to_Video_14B_FusionX_LoRA.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 316822496,
-      "size_gb": 0.3,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 14B Self Forcing LoRA T2V/I2V": {
-      "name": "Wan 2.1 14B Self Forcing LoRA T2V/I2V",
-      "repo_id": "MonsterMMORPG/Wan_GGUF",
-      "filename": "Wan21_14B_Self_Forcing_LoRA_T2V_I2V.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 316822831,
-      "size_gb": 0.3,
-      "category": "LoRA Models",
-      "sub_category": "Various LoRAs"
-    },
-    "LoRA Models::Various LoRAs::Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)": {
-      "name": "Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)",
-      "repo_id": "MonsterMMORPG/Wan_GGUF",
-      "filename": "Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
-      "is_snapshot": false,
-      "size_bytes": 739472104,
-      "size_gb": 0.69,
       "category": "LoRA Models",
       "sub_category": "Various LoRAs"
     },
@@ -2295,8 +2345,8 @@
     "SwarmUI Bundles::bundle_0": {
       "name": "Qwen Image Core Bundle",
       "category": "SwarmUI Bundles",
-      "total_size_bytes": 31400294046,
-      "total_size_gb": 29.24,
+      "total_size_bytes": 33099245150,
+      "total_size_gb": 30.83,
       "models": [
         {
           "name": "Qwen_Image_Q8_0",
@@ -2312,15 +2362,20 @@
           "name": "qwen_image_vae.safetensors",
           "size_bytes": 253806246,
           "size_gb": 0.24
+        },
+        {
+          "name": "Qwen Image Lightning 8steps V1.1 LoRA",
+          "size_bytes": 1698951104,
+          "size_gb": 1.58
         }
       ],
-      "model_count": 3
+      "model_count": 4
     },
     "SwarmUI Bundles::bundle_1": {
       "name": "Wan 2.2 Core 8 Steps Bundle",
       "category": "SwarmUI Bundles",
-      "total_size_bytes": 70692605377,
-      "total_size_gb": 65.84,
+      "total_size_bytes": 75600515073,
+      "total_size_gb": 70.41,
       "models": [
         {
           "name": "Wan 2.2 I2V High Noise 14B FP8 Scaled",
@@ -2353,18 +2408,38 @@
           "size_gb": 10.59
         },
         {
+          "name": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low",
+          "size_bytes": 1226977424,
+          "size_gb": 1.14
+        },
+        {
+          "name": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High",
+          "size_bytes": 1226977424,
+          "size_gb": 1.14
+        },
+        {
+          "name": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low",
+          "size_bytes": 1226977424,
+          "size_gb": 1.14
+        },
+        {
+          "name": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High",
+          "size_bytes": 1226977424,
+          "size_gb": 1.14
+        },
+        {
           "name": "Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)",
           "size_bytes": 739472104,
           "size_gb": 0.69
         }
       ],
-      "model_count": 7
+      "model_count": 11
     },
     "SwarmUI Bundles::bundle_2": {
       "name": "Wan 2.1 Core Models Bundle (GGUF Q6_K + Best LoRAs)",
       "category": "SwarmUI Bundles",
-      "total_size_bytes": 39609782684,
-      "total_size_gb": 36.89,
+      "total_size_bytes": 38288186245,
+      "total_size_gb": 35.66,
       "models": [
         {
           "name": "Wan 2.1 T2V 1.3B FP16",
@@ -2372,29 +2447,9 @@
           "size_gb": 2.64
         },
         {
-          "name": "Wan 2.1 T2V 14B FusionX LoRA",
-          "size_bytes": 316822496,
-          "size_gb": 0.3
-        },
-        {
           "name": "Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)",
           "size_bytes": 739472104,
           "size_gb": 0.69
-        },
-        {
-          "name": "Phantom Wan 14B FusionX LoRA",
-          "size_bytes": 316822496,
-          "size_gb": 0.3
-        },
-        {
-          "name": "Wan 2.1 I2V 14B FusionX LoRA",
-          "size_bytes": 371128616,
-          "size_gb": 0.35
-        },
-        {
-          "name": "Wan 2.1 14B Self Forcing LoRA T2V/I2V",
-          "size_bytes": 316822831,
-          "size_gb": 0.3
         },
         {
           "name": "Wan 2.1 T2V 14B 720p GGUF Q6_K",
@@ -2417,7 +2472,7 @@
           "size_gb": 1.18
         }
       ],
-      "model_count": 10
+      "model_count": 6
     },
     "SwarmUI Bundles::bundle_3": {
       "name": "FLUX Models Bundle",
@@ -2584,14 +2639,9 @@
     "ComfyUI Bundles::bundle_1": {
       "name": "ComfyUI MultiTalk Bundle",
       "category": "ComfyUI Bundles",
-      "total_size_bytes": 79510889763,
-      "total_size_gb": 74.05,
+      "total_size_bytes": 78771417659,
+      "total_size_gb": 73.36,
       "models": [
-        {
-          "name": "Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)",
-          "size_bytes": 739472104,
-          "size_gb": 0.69
-        },
         {
           "name": "Wan 2.1 Uni3C ControlNet",
           "size_bytes": 1997314376,
@@ -2633,9 +2683,9 @@
           "size_gb": 0.24
         }
       ],
-      "model_count": 9
+      "model_count": 8
     }
   },
-  "fetch_timestamp": 1754431393.7961764,
-  "fetch_date": "2025-08-06 01:03:13"
+  "fetch_timestamp": 1755286711.2430437,
+  "fetch_date": "2025-08-15 22:38:31"
 }

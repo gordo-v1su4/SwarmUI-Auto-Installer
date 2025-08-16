@@ -230,11 +230,13 @@ models_structure = {
                     "- Qwen_Image_Q8_0 (High quality GGUF model)\n"
                     "- qwen_2.5_vl_7b_fp8_scaled.safetensors (Text encoder)\n"
                     "- qwen_image_vae.safetensors (VAE model)\n"
+                    "- Qwen Image Lightning 8steps V1.1 LoRA (Fast inference LoRA)\n"
                 ),
                 "models_to_download": [
                     ("Image Generation Models", "Qwen Image Models", "Qwen_Image_Q8_0"),
                     ("Text Encoder Models", "Clip Models", "qwen_2.5_vl_7b_fp8_scaled.safetensors"),
                     ("VAE Models", "Most Common VAEs (e.g. FLUX and HiDream-I1)", "qwen_image_vae.safetensors"),
+                    ("Image Generation Models", "Qwen Image Models", "Qwen Image Lightning 8steps V1.1 LoRA"),
                 ]
             },
             {
@@ -248,6 +250,10 @@ models_structure = {
                     "- Wan 2.2 T2V Low Noise 14B FP8 Scaled\n"
                     "- Wan 2.2 VAE\n"
                     "- UMT5 XXL FP16 (Default for SwarmUI)\n"
+                    "- Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low\n"
+                    "- Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High\n"
+                    "- Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low\n"
+                    "- Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High\n"
                     "- Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)\n"
                     "\n"
                     "**How to use Wan 2.2:** [Wan 2.2 Parameters](https://github.com/mcmonkeyprojects/SwarmUI/blob/master/docs/Video%20Model%20Support.md#wan-22-parameters)"
@@ -259,6 +265,10 @@ models_structure = {
                     ("Video Generation Models", "Wan 2.2 Official Models", "Wan 2.2 T2V Low Noise 14B FP8 Scaled"),
                     ("VAE Models", "Most Common VAEs (e.g. FLUX and HiDream-I1)", "Wan 2.2 VAE"),
                     ("Text Encoder Models", "UMT5 XXL Models", "UMT5 XXL FP16 (Save As default for SwarmUI)"),
+                    ("Video Generation Models", "Wan 2.2 LoRAs", "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low"),
+                    ("Video Generation Models", "Wan 2.2 LoRAs", "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High"),
+                    ("Video Generation Models", "Wan 2.2 LoRAs", "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low"),
+                    ("Video Generation Models", "Wan 2.2 LoRAs", "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High"),
                     ("Video Generation Models", "Wan 2.1 LoRAs", "Wan 2.1 14B LightX2V CFG Step Distill LoRA V2 (T2V + I2V) (Rank 64)"),
                 ]
             },
@@ -431,6 +441,7 @@ models_structure = {
                     {"name": "Qwen_Image_Q8_0", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "qwen-image-Q8_0.gguf", "save_filename": "Qwen_Image_Q8_0.gguf"},
                     {"name": "Qwen_Image_FP8_e4m3f", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "qwen_image_fp8_e4m3fn.safetensors", "save_filename": "qwen_image_fp8_e4m3fn.safetensors"},
                     {"name": "Qwen_Image_BF16", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "qwen_image_bf16.safetensors", "save_filename": "qwen_image_bf16.safetensors"},
+                    {"name": "Qwen Image Lightning 8steps V1.1 LoRA", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Qwen-Image-Lightning-8steps-V1.1.safetensors", "save_filename": "Qwen-Image-Lightning-8steps-V1.1.safetensors", "target_dir_key": "Lora", "info": "Qwen Image Lightning LoRA for fast 8-step image generation. Saves to Lora folder. Use with Qwen Image models for optimized inference."},
                 ]
             },
             "FLUX Models": {
@@ -751,6 +762,17 @@ models_structure = {
                     {"name": "Wan 2.2 TI2V 5B FP16", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "wan2.2_ti2v_5B_fp16.safetensors", "save_filename": "wan2.2_ti2v_5B_fp16.safetensors"},
                  ]
              },
+            "Wan 2.2 LoRAs": {
+                 "info": ("Wan 2.2 LoRA models for enhanced performance and specialized use cases. See SwarmUI Video Docs for usage details on CFG, Steps, FPS, and Trim Video Start Frames.\n\n"
+                          "**Extremely Important How To Use Parameters and Guide:** [Wan 2.2 Parameters](https://github.com/mcmonkeyprojects/SwarmUI/blob/master/docs/Video%20Model%20Support.md#wan-22)"),
+                 "target_dir_key": "Lora",
+                 "models": [
+                    {"name": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low.safetensors", "save_filename": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_Low.safetensors", "target_dir_key": "Lora", "info": "Wan 2.2 T2V LoRA Low Noise variant for fast 4-step generation. Saves to Lora folder. See SwarmUI Video Docs for usage details."},
+                    {"name": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High.safetensors", "save_filename": "Wan2_2-T2V-A14B-4steps-lora-rank64-Seko-V1_1_High.safetensors", "target_dir_key": "Lora", "info": "Wan 2.2 T2V LoRA High Noise variant for fast 4-step generation. Saves to Lora folder. See SwarmUI Video Docs for usage details."},
+                    {"name": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low.safetensors", "save_filename": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_Low.safetensors", "target_dir_key": "Lora", "info": "Wan 2.2 I2V LoRA Low Noise variant for fast 4-step generation. Saves to Lora folder. See SwarmUI Video Docs for usage details."},
+                    {"name": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High.safetensors", "save_filename": "Wan2_2-I2V-A14B-4steps-lora-rank64-Seko-V1_High.safetensors", "target_dir_key": "Lora", "info": "Wan 2.2 I2V LoRA High Noise variant for fast 4-step generation. Saves to Lora folder. See SwarmUI Video Docs for usage details."},
+                 ]
+             },
             "Hunyuan Models": {
                 "info": ("Hunyuan text-to-video and image-to-video models. GGUF Quality: Q8 > Q6 > Q5 > Q4 (K_M > K_S > K > 1 > 0).\n\n"
                          "**Extremely Important How To Use Parameters and Guide:** [Hunyuan Video Parameters](https://github.com/mcmonkeyprojects/SwarmUI/blob/master/docs/Video%20Model%20Support.md#hunyuan-video-parameters)"),
@@ -826,12 +848,10 @@ models_structure = {
     "LoRA Models": {
         "info": "Readme for Wan 2.1 CausVid LoRA to Speed Up : [LoRA Models](https://github.com/mcmonkeyprojects/SwarmUI/blob/master/docs/Video%20Model%20Support.md#wan-causvid---high-speed-14b)",
         "sub_categories": {
-            "Various LoRAs": {
-                "info": "A collection of LoRA models.",
+            "Wan 2.1 LoRAs": {
+                "info": "Wan 2.1 LoRA models for enhanced performance and specialized use cases. See SwarmUI Video Docs for usage details on CFG, Steps, FPS, and Trim Video Start Frames.",
                 "target_dir_key": "Lora",
                 "models": [
-                    {"name": "Migration LoRA Cloth (TTPlanet)", "repo_id": "TTPlanet/Migration_Lora_flux", "filename_in_repo": "Migration_Lora_cloth.safetensors", "save_filename": "Migration_Lora_cloth.safetensors"},
-                    {"name": "Figures TTP Migration LoRA (TTPlanet)", "repo_id": "TTPlanet/Migration_Lora_flux", "filename_in_repo": "figures_TTP_Migration.safetensors", "save_filename": "figures_TTP_Migration.safetensors"},
                     wan_causvid_14b_lora_v2_entry,
                     wan_causvid_14b_lora_entry,
                     wan_causvid_1_3b_lora_entry,
@@ -839,7 +859,15 @@ models_structure = {
                     {"name": "Wan 2.1 I2V 14B FusionX LoRA", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Wan2.1_Image_to_Video_14B_FusionX_LoRA.safetensors", "save_filename": "Wan2.1_Image_to_Video_14B_FusionX_LoRA.safetensors", "target_dir_key": "Lora", "info": "FusionX I2V LoRA for Wan 2.1 14B models. Saves to Lora folder. See SwarmUI Video Docs for usage details."},
                     {"name": "Wan 2.1 T2V 14B FusionX LoRA", "repo_id": "MonsterMMORPG/Wan_GGUF", "filename_in_repo": "Wan2.1_Text_to_Video_14B_FusionX_LoRA.safetensors", "save_filename": "Wan2.1_Text_to_Video_14B_FusionX_LoRA.safetensors", "target_dir_key": "Lora", "info": "FusionX T2V LoRA for Wan 2.1 14B models. Saves to Lora folder. See SwarmUI Video Docs for usage details."},
                     wan_self_forcing_lora_entry,
-                    wan_lightx2v_lora_entry,                    
+                    wan_lightx2v_lora_entry,
+                ]
+            },
+            "Various LoRAs": {
+                "info": "A collection of LoRA models.",
+                "target_dir_key": "Lora",
+                "models": [
+                    {"name": "Migration LoRA Cloth (TTPlanet)", "repo_id": "TTPlanet/Migration_Lora_flux", "filename_in_repo": "Migration_Lora_cloth.safetensors", "save_filename": "Migration_Lora_cloth.safetensors"},
+                    {"name": "Figures TTP Migration LoRA (TTPlanet)", "repo_id": "TTPlanet/Migration_Lora_flux", "filename_in_repo": "figures_TTP_Migration.safetensors", "save_filename": "figures_TTP_Migration.safetensors"},
                 ]
             }
         }
@@ -1946,22 +1974,13 @@ def create_ui(default_base_path):
         margin-bottom: 15px !important;
     }
     """) as app:
-        gr.Markdown(f"## {APP_TITLE} V63 > Source : https://www.patreon.com/posts/114517862")
+        gr.Markdown(f"## {APP_TITLE} V67 > Source : https://www.patreon.com/posts/114517862")
         gr.Markdown(f"### ComfyUI Installer for SwarmUI's Back-End > https://www.patreon.com/posts/105023709")
-        gr.Markdown(f"### 5 May 2025 Main How To Install & Use Tutorial : https://youtu.be/fTzlQ0tjxj0")
-        gr.Markdown(f"### 19 May 2025 Wan 2.1 I2V & T2V With CausVid LoRA Tutorial : https://youtu.be/fTzlQ0tjxj0")
-        gr.Markdown(f"### 1 June 2025 CausVid LoRA V2 (much better) Tutorial : https://youtu.be/1rAwZv0hEcU")      
-        gr.Markdown(f"### 17 June 2025 WAN 2.1 FusionX is the New Best of Local Video Generation with Only 8 Steps + FLUX Upscaling Guide Tutorial : https://youtu.be/Xbn93GRQKsQ")         
+        gr.Markdown(f"### 5 May 2025 Main How To Install & Use Tutorial : https://youtu.be/fTzlQ0tjxj0")   
+        gr.Markdown(f"### 17 June 2025 WAN 2.1 FusionX is the New Best of Local Video Generation with Only 8 Steps + FLUX Upscaling Guide Tutorial : https://youtu.be/Xbn93GRQKsQ")    
+        gr.Markdown(f"### 2 August 2025 Wan 2.2 & FLUX Krea Full Tutorial - Automated Install - Ready Perfect Presets - SwarmUI with ComfyUI Tutorial : https://youtu.be/8MvvuX4YPeo")         
         gr.Markdown("### Select models or bundles to download. Downloads will be added to a queue. Use the search bar to filter.")
-        gr.Markdown("💡 **Note:** Model sizes are fetched from Hugging Face Hub. Run `python fetch_model_sizes.py` to generate/update size data.", elem_classes="hint-text")
         
-        # Add size data status
-        if has_size_data:
-            fetch_date = size_data.get("fetch_date", "Unknown") if size_data else "Unknown"
-            gr.Markdown(f"📊 **Model sizes loaded** (fetched: {fetch_date}). To refresh sizes, run: `python fetch_model_sizes.py`", elem_classes="hint-text")
-        else:
-            gr.Markdown("📊 **Model sizes not available**. To show download sizes, run: `python fetch_model_sizes.py`", elem_classes="hint-text")
-
         log_output = gr.Textbox(label="Download Status / Log - Watch CMD / Terminal To See Download Status & Speed", lines=10, max_lines=20, interactive=False, value="Welcome! Logs will appear here.")
         queue_status_label = gr.Markdown(f"Queue Size: {download_queue.qsize()}")
 
