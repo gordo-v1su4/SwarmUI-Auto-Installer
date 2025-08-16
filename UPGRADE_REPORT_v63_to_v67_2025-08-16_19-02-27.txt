@@ -1,0 +1,36 @@
+===== SWARMUI MODEL DOWNLOADER UPGRADE: V63 to V67 =====
+Generated: 2025-08-16 19:17:07
+
+SUMMARY OF CHANGES:
+- Added newer presets file: Amazing_SwarmUI_Presets_v13.json
+- Updated main Downloader_Gradio_App.py with improvements
+- Updated model_sizes.json with new/modified models
+- Added older_presets directory with preset versions 8-12
+- Directories removed: SwarmUI, venv_downloader (marked as EXTRA by robocopy)
+- Files removed: Amazing_SwarmUI_Presets_v9.json, last_settings.json (old versions)
+
+ROBOCOPY RESULTS:
+- 11 new files copied
+- 30 existing files skipped (unchanged)
+- 5 extra files removed from v63
+- 3.61MB of new/updated content
+- 3 directories removed from v63
+
+KEY UPDATES:
+1. New preset collection (v8-v13) in older_presets folder
+2. Main application updates in Downloader_Gradio_App.py
+3. Expanded model database in model_sizes.json
+4. Version history preserved in older_versions folder
+
+BACKUP FILES CREATED:
+- backup_index_2025-08-16_19-02-27.csv (file inventory with hashes)
+- directory_structure_2025-08-16_19-02-27.csv (complete directory structure)
+- key_files_snapshot_2025-08-16_19-02-27.txt (content snapshots)
+
+GIT TRACKING:
+- Repository initialized with main branch
+- v63 baseline committed: c17f17a
+- All changes staged and ready for final commit
+
+To see detailed file-by-file changes, use: git --no-pager diff HEAD
+To commit the upgrade, use: git commit -m "Upgraded from v63 to v67"

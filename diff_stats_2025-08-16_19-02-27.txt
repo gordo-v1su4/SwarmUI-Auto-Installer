@@ -1,0 +1,9 @@
+ Amazing_SwarmUI_Presets_v13.json               | 301 +++++++++++++++++++++++++
+ Downloader_Gradio_App.py                       |  55 +++--
+ model_sizes.json                               | 198 ++++++++++------
+ older_presets/Amazing_SwarmUI_Presets_v10.json | 274 ++++++++++++++++++++++
+ older_presets/Amazing_SwarmUI_Presets_v11.json | 275 ++++++++++++++++++++++
+ older_presets/Amazing_SwarmUI_Presets_v12.json | 278 +++++++++++++++++++++++
+ older_presets/Amazing_SwarmUI_Presets_v8.json  | 229 +++++++++++++++++++
+ older_presets/Amazing_SwarmUI_Presets_v9.json  | 258 +++++++++++++++++++++
+ 8 files changed, 1776 insertions(+), 92 deletions(-)

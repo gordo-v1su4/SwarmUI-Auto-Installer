@@ -1,0 +1,8 @@
+A	Amazing_SwarmUI_Presets_v13.json
+M	Downloader_Gradio_App.py
+M	model_sizes.json
+A	older_presets/Amazing_SwarmUI_Presets_v10.json
+A	older_presets/Amazing_SwarmUI_Presets_v11.json
+A	older_presets/Amazing_SwarmUI_Presets_v12.json
+A	older_presets/Amazing_SwarmUI_Presets_v8.json
+A	older_presets/Amazing_SwarmUI_Presets_v9.json
