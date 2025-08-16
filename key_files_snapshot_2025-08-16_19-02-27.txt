@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+"""
+Debug script to identify mismatches between model keys in size data and Gradio lookup keys.
+"""
+
+import json
+import os
+from Downloader_Gradio_App import models_structure, MODEL_SIZES_FILE
+
+def load_size_data():
+    """Load the model size data from JSON file."""
+    if not os.path.exists(MODEL_SIZES_FILE):
+        print(f"ERROR: {MODEL_SIZES_FILE} not found. Run fetch_model_sizes.py first.")
+        return None
+    
+    try:
+        with open(MODEL_SIZES_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"ERROR: Could not load {MODEL_SIZES_FILE}: {e}")
+#!/usr/bin/env python3
+"""Debug script to check model name mismatches between structure and size data."""
+
+import json
+import sys
+sys.path.append('.')
+from Downloader_Gradio_App import load_model_sizes, models_structure, size_data
+
+# Load the size data
+load_model_sizes()
+
+print("=== DEBUGGING MODEL SIZE MISMATCHES ===")
+print()
+
+# Check UMT5 models specifically
+print("UMT5 Models in Structure:")
+umt5_models = models_structure['Text Encoder Models']['sub_categories']['UMT5 XXL Models']['models']
+for model in umt5_models:
+    print(f"  - {model['name']}")
+
+import gradio as gr
+import sys
+import subprocess
+import os
+import platform
+import shutil
+import time
+import threading
+import queue
+import argparse
+import copy
+import json
+
+try:
+    from huggingface_hub import hf_hub_download, snapshot_download, HfFileSystem
+    from huggingface_hub.utils import HfHubHTTPError, HFValidationError
+except ImportError:
+    print("huggingface_hub not found. Attempting installation...")
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "huggingface_hub>=0.20.0"]) # Added version specifier
+#!/usr/bin/env python3
+"""
+Model Size Fetcher for SwarmUI Model Downloader
+
+This script fetches the sizes of all models defined in the application
+and saves them to a JSON file for display in the UI.
+"""
+
+import json
+import os
+import sys
+import time
+from typing import Dict, List, Optional, Tuple
+
+try:
+    from huggingface_hub import HfFileSystem
+    from huggingface_hub.utils import HfHubHTTPError, HFValidationError
+except ImportError:
+    print("huggingface_hub not found. Please install it: pip install huggingface_hub")
+    sys.exit(1)
+#!/usr/bin/env python3
+"""
+Retry Failed Models Script for SwarmUI Model Downloader
+
+This script retries fetching sizes for models that previously failed
+and provides detailed error information.
+"""
+
+import json
+import os
+import sys
+import time
+from typing import Dict, List, Optional
+
+try:
+    from huggingface_hub import HfFileSystem
+    from huggingface_hub.utils import HfHubHTTPError, HFValidationError
+except ImportError:
+    print("huggingface_hub not found. Please install it: pip install huggingface_hub")
+    sys.exit(1)
+#!/usr/bin/env python3
+"""
+Setup Hugging Face Token for SwarmUI Model Downloader
+
+This script sets up the Hugging Face token as an environment variable
+for authentication with the Hugging Face Hub.
+"""
+
+import os
+
+# Your Hugging Face token
+HF_TOKEN = "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"
+
+# Set the environment variable
+os.environ["HUGGING_FACE_HUB_TOKEN"] = HF_TOKEN
+
+print("✅ Hugging Face token has been set!")
+print(f"🔑 Token: {HF_TOKEN[:10]}...{HF_TOKEN[-4:]}")
+print("\nYou can now run:")
+print("  python fetch_model_sizes.py")
+#!/usr/bin/env python3
+"""
+Screenshot Splitter for Reddit Gallery
+Splits screenshots vertically into optimal parts (square when possible, max 20) for easy sharing as a gallery on Reddit.
+"""
+
+import os
+import sys
+from PIL import Image
+import math
+
+def create_split_folder():
+    """Create the split subfolder if it doesn't exist"""
+    split_folder = os.path.join("screenshots", "split")
+    if not os.path.exists(split_folder):
+        os.makedirs(split_folder)
+        print(f"Created split folder: {split_folder}")
+    return split_folder
+
+def calculate_optimal_parts(width, height, max_parts=20):
