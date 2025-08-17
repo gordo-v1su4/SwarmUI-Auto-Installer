@@ -1,5 +1,13 @@
+# Lines added to ignore or include paths
 venv_downloader
-SwarmUI
+SwarmUI/**
 older_versions
 Config_Images
 .vs
+
+# Allow tracking wildcard .txt files while keeping the rest of SwarmUI ignored
+# Re-include the directory chain and then include only the desired files
+!SwarmUI/
+!SwarmUI/Data/
+!SwarmUI/Data/Wildcards/
+!SwarmUI/Data/Wildcards/*.txt
