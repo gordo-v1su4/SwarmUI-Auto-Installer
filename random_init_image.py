@@ -63,8 +63,10 @@ def copy_random_image():
         return False
     
     try:
-        # Create output directory if it doesn't exist
-        os.makedirs(os.path.dirname(OUTPUT_IMAGE_PATH), exist_ok=True)
+        # Create output directory if it doesn't exist (only if there's a directory part)
+        output_dir = os.path.dirname(OUTPUT_IMAGE_PATH)
+        if output_dir:  # Only create directory if path contains a directory
+            os.makedirs(output_dir, exist_ok=True)
         
         # Copy the selected image to the fixed output path
         shutil.copy2(selected_image, OUTPUT_IMAGE_PATH)
